@@ -33,6 +33,5 @@ jobs:
           charts_dir: chart
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          CR_SKIP_EXISTING=true
-          CR_OWNER=project_codeflare
+          CR_SKIP_EXISTING: "true"
           
