@@ -27,10 +27,9 @@ jobs:
           version: 3.14
 
       - name: Run chart-releaser
-        working-directory: tools/pytorchjob-generator
         uses: helm/chart-releaser-action@v1.6.0
         with:
-          charts_dir: chart
+          charts_dir: tools/pytorchjob-generator/chart
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_SKIP_EXISTING: "true"
